@@ -1,5 +1,7 @@
 public class Complex 
 {
+    // variables to hold real and imaginary part of complex
+    // number
     double inum1;
     double inum2;
 
@@ -18,7 +20,7 @@ public class Complex
         temp = add(n1, n2);
         System.out.printf("Sum = %.1f + %.1fi", temp.inum1, temp.inum2);
     }
-
+    // we will implement  this function for addition
     public static Complex add(Complex n1, Complex n2)
     {
         Complex temp = new Complex(0.0, 0.0);
