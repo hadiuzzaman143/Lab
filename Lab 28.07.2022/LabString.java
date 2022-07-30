@@ -1,32 +1,47 @@
-import java.util.StringTokenizer;; 
+// 
+import java.util.StringTokenizer;
 
-public class LabString // calss 
-{
-public static void main(String[]args)  
- {
-   String s1 = "Welcome to java World"; //creating string object
-   System.out.println(s1.charAt(5)); //5th index character
-   System.out.println(s1.compareToIgnoreCase("Welcome")); // comparing
-   System.out.println(s1.concat("- Let us learn"));
-   System.out.println(s1.indexOf('a'));
-   System.out.println(s1.replace('a', 'e'));
-   System.out.println(s1.substring(4,10));
-   System.out.println(s1.toLowerCase());
+public class LabString  
+{   
+ // class
+	public static void show() 
+ {  
+  // method
+		StringTokenizer temp = new StringTokenizer("C:\\IBM\\DB2\\PROGRAM\\DB2COPY1.EXE","\\");    // object
+		System.out.println("Drive: "+temp.nextToken()+"\\");
+		System.out.println("Folders: "+temp.nextToken()+"||"+temp.nextToken()+"||"+temp.nextToken());
+		System.out.println("Files: "+ temp.nextToken());
+	}
 
-   StringBuffer s2 = new StringBuffer("This is StringBuffer");
-   System.out.println(s2.append("- This is a sample program"));
-   System.out.println(s2.insert(21,"Object"));
-   System.out.println(s2.reverse());
-   System.out.println(s2.replace(14, 20, "Builder"));
-   parseString();
- }
-  public static void parseString()
-  {
-    //print 0 to 2 index
-    StringTokenizer temp = new StringTokenizer("C:\\IBM\\DB2\\PROGRAM\\DB2COPY1.EXE","\\");
-    System.out.println("Drive:"+temp.nextToken()+"\\");
-    System.out.println("Filders :"+temp.nextToken()+"||"+temp.nextToken()+"||"+temp.nextToken());
-    System.out.println("Files :"+temp.nextToken());
-  }
-     
+	public static void main(String[] args) 
+ {     
+  // main method
+		// solution of problem statement 1
+		String s1 = "Welcome to Java World";
+		
+		char c = s1.charAt(5);
+		System.out.println(c);    // char method
+		System.out.println(s1.compareToIgnoreCase("Welcome"));    // compareToIgnoreCase method
+		System.out.println(s1.concat(" - Let us learn"));    // concat method
+		System.out.println(s1.indexOf('a'));    // indexOf method
+		System.out.println(s1.replace('a', 'e'));    // replace method
+		System.out.println(s1.substring(4,10));    // substring method
+		System.out.println(s1.toLowerCase());    // toLowerCase method
+		
+		System.out.println("\n --------------*-------------- \n");
+		
+		// solution of problem statement 2
+		StringBuffer s2 = new StringBuffer("This is StringBuffer");    // StringBuffer object
+		System.out.println(s2.append(" - This is a sample program" ));    // append method
+		System.out.println(s2.insert(21,"Object"));    // insert method
+		System.out.println(s2.reverse());    // reverse method
+		System.out.println(s2.replace(14, 20, "Builder"));    // replace method
+		
+		System.out.println("\n --------------*-------------- \n");
+		
+		// solution of problem statement 3
+		show();   // called the method
+
+	}
+
 }
