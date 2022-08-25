@@ -1,4 +1,4 @@
-USE employee_db;
+SELECT * FROM employee_db.employee;
 CREATE TABLE `employee` 
 (
   `EMPLOYEE_ID` int(6) NOT NULL,
