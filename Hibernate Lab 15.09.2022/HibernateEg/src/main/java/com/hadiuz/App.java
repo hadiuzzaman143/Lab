@@ -43,8 +43,9 @@ public class App {    // main class
         	case 4: dao.updateStudent();
         		break;
         	// Exit
-        	case 5: System.exit(0);
+        	 case 5: 
         		System.out.println("Thank You.");
+        		System.exit(0);
         		break;
         	// default case for invalid choice	
         	default: System.out.println("Invalid Choice!");
